@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resposta 2</title>
+</head>
+<body>
+    <script>
+        /***
+         B) Elaborar um programa para uma pizzaria, o qual leia o valor
+         de uma conta e quantos clientes vão pagá-la. Calcule e informe
+         o valor a ser pago por cliente.
+
+        Exemplo:
+        Valor da Conta: 90.00
+        Número de Clientes: 3
+        Valor por Cliente: 30.00
+        ***/
+        
+        //Lê a entrada de dados 
+        let conta = Number(prompt('Valor da conta: '))
+        let clientes = Number(prompt('Clientes : '))
+        // Calcula os dados
+        let valorDividido = conta / clientes;
+
+        alert('Valor da Conta R$: '+conta.toFixed(2)+
+        '\nNúmero de Clientes: '+clientes+
+        '\nValor por Cliente R$: '+valorDividido.toFixed(2))
+    </script>
+</body>
+</html>

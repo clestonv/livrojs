@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 09</title>
+</head>
+<body>
+    <script>
+        // Lê o valor do jantar
+        let jantar = Number(prompt("Valor do Jantar R$: "))        
+        // Calcula os dados
+        let garcom = jantar * 0.10;
+        let total = jantar + garcom
+        // Exibe a resposta
+        alert(`
+        Taxa do Garçom R$ ${garcom.toFixed(2)} 
+        Valor Jantar R$ ${jantar.toFixed(2)} 
+        Total R$: ${total.toFixed(2)}`)
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3.3</title>
+</head>
+<body>
+    <script>
+        let bairro = prompt('Bairro de entrega: ');
+        let taxaEntrega;
+
+        switch (bairro) {
+            case "Centro":
+                taxaEntrega = 5.00
+                break;
+            case "Fragata":
+                taxaEntrega = 7.00
+                break;
+            case "Laranjal":
+                taxaEntrega = 10.00
+                break;
+            default:
+                taxaEntrega = 8.00
+        }
+
+        alert('Taxa de R$: '+ taxaEntrega.toFixed(2))
+    </script>
+</body>
+</html>
