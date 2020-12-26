@@ -14,10 +14,11 @@
     const outTroco = document.getElementById('outTroco')
     const tri = document.getElementById('tri')
 
-    // convertendo para numero
+    // pegando o valor do input
     const texto = inValor.value
+    // convertendo para numero
     const valor = Number(inValor.value)
-    
+
     // se numero maior que 3
     if (valor >= 3 ) {
         const troco = valor - 3
@@ -32,7 +33,7 @@
         outTempo.textContent = 'Tempo: 30 min'
         outTroco.textContent = 'Troco: R$'+ troco.toFixed(2)
     } else {
-        tri.textContent = 'Valor insuficiente'
+        tri.textContent = 'Valor ('+ texto +') insuficiente'
         tri.style.fontFamily = 'monospace'
         tri.style.fontWeight = 'bold'
         tri.style.fontSize = 'x-large'
