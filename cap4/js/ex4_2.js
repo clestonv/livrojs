@@ -17,16 +17,16 @@ function listarNumeros() {
     }
 
     // inicializar variavel resposta
-    let resposta = "Entre o "+numero+" e 1:";
-
+    let resposta = "Entre o "+numero+" e 1: ";
+    let i = numero
     // cria um for descrecente
-    for(let i = numero; i > 0; i = i--) {
-        resposta = resposta + i + ", "
+    for( i; i > 1; i--) {
+        resposta = resposta + i + '\n'
     }
+    resposta = resposta + i + "."
 
     // altera o conteúdo de outResposta
     outResposta.textContent = resposta;
-    console.log(resposta)
 }
 
 // Referenciar botão de ação

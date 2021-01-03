@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 4.3</title>
+</head>
+<body>
+    
+    <script>
+        let num = Number
+        // solicita o número e repete a leitura enquanto inválido
+        do {
+            num = Number(prompt('Numero: '))
+            if (num == 0 || isNaN(num)) {
+                alert("Digite um número valido....")
+            }
+        } while (num == 0 || isNaN(num))
+
+        // declara e inicializa variável que irá exibir pares
+        let pares = "Pares entre 1 e " + num + ": "
+
+        // isola o primeiro par (para evitar última virgula)
+        if (num > 1) {
+            pares = pares + "2"
+        }
+
+        //laço para acumular pares (inicia em 4, pois o 2 já foi atribuido)
+        for (var i = 4; i <= num; i = i + 2) {
+            pares = pares + ", " + i
+        }
+        // exibe lista dos números pares
+        alert(pares)
+    </script>
+</body>
+</html>
