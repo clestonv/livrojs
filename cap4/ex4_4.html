@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 4.4</title>
+</head>
+<body>
+    <h3>Exemplo 4.4</h3>    
+    <script>
+        alert('Digite 0 para sair')
+        // inicio da repetição
+        do {
+            let num = Number(prompt('Número: '))
+
+            if (num == 0 || isNaN(num)) {
+                let sair = confirm("Confirma saída?");  // solicita confirmação do usuário
+                if (sair ) {
+                    break; // sai da repetição
+                } else {
+                    continue; // volta ao início do laço
+                }
+            }
+            // se par, mostra o dobro; ímpar, mostra o triplo
+            if (num % 2 == 0) {
+                alert('O dobro de '+ num +' é: '+ num * 2);
+            } else {
+                alert('O triplo de '+ num +' é: '+ num * 3);
+            }
+        } while (true); //enquanto verdade (só sai do laço, pelo break)
+
+        alert('Bye, bye...')
+    </script>
+</body>
+</html>
