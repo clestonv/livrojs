@@ -11,14 +11,13 @@ function repetirFrutas () {
     // declara variável que irá concatenar as frutas
     let mostraFrutas = ""
 
-    for (let i = 0; i <= quantidade; i++ ) {
-
+    for (let i = 1; i <= quantidade; i++ ) {
         if (i < quantidade) {
             // quando o valor for menor que i recebe o nome da fruta + *
             mostraFrutas += fruta + " * "
-        }  else {
+        } else {
             // quando a condição não for verdadeira recebe só a fruta
-            mostraFrutas += fruta
+            mostraFrutas += fruta 
         }        
     }
 
