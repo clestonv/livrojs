@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Roboto:wght@300;400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(195, 199, 199);
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1.2px;
+}
+main {
+    width: 950px;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+}
+
+main h4 {
+    display: block;
+    font-size: 45px;
+    font-family: 'DM Serif Display', serif;
+    text-align: center;
+    padding: 25px;
+    text-transform: uppercase;
+    color: rgb(68 81 87);
+}
+
+.card {
+    margin: 30px 20px 0px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+img {
+    width: 95%;
+    object-fit: cover;
+}
+
+img:hover {
+    transform: scaleX(-1);
+}
+
+#system {
+    margin-top: 10px;
+    background-color: #0777af;
+    border-radius: 15px;
+}
+
+.consulta {
+    margin: 10px;
+    color: rgb(243, 243, 243);
+}
+
+.consulta hr {
+    margin-top: 10px;
+    background-color: cornsilk;
+    height: 3px;
+    border: none;
+}
+
+.btnA {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+.btnA button {
+    padding: 4px 9px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 700;
+
+    outline: rgb(231, 138, 16);
+    border: 1px solid rgb(113 199 212);
+    transition: 1ms;
+}
+
+.btnA button:hover {
+    background-color: rgb(113 199 212);
+}
+.consulta input#inPaciente {
+    margin-top: 4px;
+    width: 100%;
+    border-radius: 4px;
+    padding: 4px 9px;
+
+    outline: rgb(231, 138, 16);
+    border: 1px solid rgb(113 199 212);
+}
+
+#atendimento {
+    margin: 10px;
+    color: cornsilk;
+}
+#atendimento span {
+    color: rgb(231, 138, 16);
+    margin-left: 10px;
+    letter-spacing: 2px;
+}

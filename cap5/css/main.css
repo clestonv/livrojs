@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Roboto:wght@300;400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(195, 199, 199);
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1.2px;
+}
+main {
+    width: 950px;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+}
+
+main h3 {
+    display: block;
+    font-size: 45px;
+    font-family: 'DM Serif Display', serif;
+    text-align: center;
+    padding: 25px;
+    text-transform: uppercase;
+    color: rgb(68 81 87);
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+section img {
+    width: 425px;
+    object-fit: cover;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+#display {
+    width: 425px;
+    height: 100%;
+    border-radius: 15px;
+    background-color: rgb(138, 184, 245);
+    padding: 15px;
+}

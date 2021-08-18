@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Exemplo 5.1</title>
+</head>
+<body>
+    <main>
+        <h4>Consultório Odontológico</h4>
+        <hr>
+        <div class="card">
+            <img src="img/dentista.jpg" alt="Dentista">
+
+            <div id="system">
+                <div class="consulta">
+                    <p>Paciente:
+                        <input type="text" id="inPaciente" autofocus>                        
+                    </p>
+                    <div class="btnA">
+                        <button id="btAdicionar">Adicionar</button>
+                        <button id="btUrgencia">Urgencia</button>
+                        <button id="btAtender">Atender</button>
+                    </div>
+                    <hr>
+                </div>
+                <div id="atendimento">
+                    <h3>Em Atendimento: <span id="outAtendimento">Teste</span></h3>
+                    <pre id="outLista"></pre>
+                </div>
+            </div>         
+        </div>
+    </main>
+
+    <script src="js/ex5_1.js"></script>
+</body>
+</html>
